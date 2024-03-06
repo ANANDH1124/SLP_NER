@@ -8,7 +8,7 @@ choice=st.sidebar.selectbox('selected',menu_task)
 
 
 if choice=='NER':
-    st.subheader('Named Entity Recognition APP')
+    st.subheader('Named Entity Recognition ')
     rawtext=st.text_area("TOKENIZE","ENTER TEXT")
     docs=nlp(rawtext)
     if st.button('Recognize'):
