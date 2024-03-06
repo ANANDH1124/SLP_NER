@@ -11,7 +11,7 @@ if choice=='NER':
     st.subheader('NER APP')
     rawtext=st.text_area("TOKENIZE","ENTER TEXT")
     docs=nlp(rawtext)
-    if st.button('REcognize'):
+    if st.button('Recognize'):
         spt.visualize_ner(docs)
 elif choice=='Tokenizer':
     st.subheader('TOKENIZER APP')
