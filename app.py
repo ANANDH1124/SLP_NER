@@ -2,13 +2,13 @@ import streamlit as st
 import spacy
 import spacy_streamlit as spt
 nlp=spacy.load('en_core_web_sm')
-st.title('NER APP')
+st.title('Named Entity Recognition APP')
 menu_task=['NER','Tokenizer']
 choice=st.sidebar.selectbox('selected',menu_task)
 
 
-if choice=='NER':
-    st.subheader('NER APP')
+if choice=='Named Entity Recognition':
+    st.subheader('Named Entity Recognition APP')
     rawtext=st.text_area("TOKENIZE","ENTER TEXT")
     docs=nlp(rawtext)
     if st.button('Recognize'):
